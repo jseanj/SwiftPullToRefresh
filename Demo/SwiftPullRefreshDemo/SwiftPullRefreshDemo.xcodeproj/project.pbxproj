@@ -15,6 +15,7 @@
 		773CC16C1A009B7B00F37F04 /* SwiftPullRefreshDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CC16B1A009B7B00F37F04 /* SwiftPullRefreshDemoTests.swift */; };
 		773CC1771A009C2C00F37F04 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CC1761A009C2C00F37F04 /* StateMachine.swift */; };
 		773CC1791A009C4400F37F04 /* SwiftPullRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CC1781A009C4400F37F04 /* SwiftPullRefresh.swift */; };
+		77919BC31A3162D10088BD56 /* SwiftLoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77919BC21A3162D10088BD56 /* SwiftLoadMore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		773CC16B1A009B7B00F37F04 /* SwiftPullRefreshDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPullRefreshDemoTests.swift; sourceTree = "<group>"; };
 		773CC1761A009C2C00F37F04 /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
 		773CC1781A009C4400F37F04 /* SwiftPullRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPullRefresh.swift; sourceTree = "<group>"; };
+		77919BC21A3162D10088BD56 /* SwiftLoadMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoadMore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				773CC1761A009C2C00F37F04 /* StateMachine.swift */,
 				773CC1781A009C4400F37F04 /* SwiftPullRefresh.swift */,
+				77919BC21A3162D10088BD56 /* SwiftLoadMore.swift */,
 			);
 			path = SwiftPullRefresh;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77919BC31A3162D10088BD56 /* SwiftLoadMore.swift in Sources */,
 				773CC1581A009B7B00F37F04 /* ViewController.swift in Sources */,
 				773CC1771A009C2C00F37F04 /* StateMachine.swift in Sources */,
 				773CC1791A009C4400F37F04 /* SwiftPullRefresh.swift in Sources */,
@@ -421,6 +425,7 @@
 				773CC1711A009B7B00F37F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		773CC1721A009B7B00F37F04 /* Build configuration list for PBXNativeTarget "SwiftPullRefreshDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +434,7 @@
 				773CC1741A009B7B00F37F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
