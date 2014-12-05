@@ -13,7 +13,8 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        /*let refresh = RefreshControl(frame: CGRectMake(0, 0, 320, -50))
+        let refresh = RefreshControl(frame: CGRectMake(0, -50, 320, 50))
+        refresh.backgroundColor = UIColor.redColor()
         weak var theRefresh = refresh
         refresh.refreshClosure = {
             println("trigger using closure mode")
@@ -22,7 +23,7 @@ class ViewController: UITableViewController {
                 theRefresh?.endRefresh()
             })
         }
-        self.tableView.addSubview(refresh)*/
+        self.tableView.addSubview(refresh)
         
         let loadMore = LoadMoreControl(frame: CGRectMake(0, 0, 320, 50))
 

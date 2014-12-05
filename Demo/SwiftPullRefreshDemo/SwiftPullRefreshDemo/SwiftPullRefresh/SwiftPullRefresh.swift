@@ -74,7 +74,7 @@ public class RefreshControl: UIControl {
         let label = UILabel(frame: CGRectMake(0, 0, 200, 20))
         label.textAlignment = NSTextAlignment.Center
         label.autoresizingMask = UIViewAutoresizing.FlexibleLeftMargin | UIViewAutoresizing.FlexibleRightMargin | UIViewAutoresizing.FlexibleTopMargin
-        label.center = CGPointMake(CGRectGetMidX(self.bounds), -CGRectGetHeight(label.frame) / 2 - 5)
+        label.center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds))
         self.addSubview(label)
         self.label = label
     }
@@ -82,7 +82,7 @@ public class RefreshControl: UIControl {
     func setupAction() {
         // add action
         draging.entry = {
-            println("drag")
+            //println("drag")
             self.label.text = "正在拖动"
         }
         ready.entry = {
@@ -144,7 +144,7 @@ public class RefreshControl: UIControl {
             let point = change[NSKeyValueChangeNewKey]?.CGPointValue()
             if let pointY = point?.y {
                 println(pointY)
-                if pointY < -100.0 {
+                if pointY < -refreshControlThreshold() {
                     controller.handle("threshold")
                     if !superScrollView.tracking {
                         controller.handle("release")
@@ -157,6 +157,6 @@ public class RefreshControl: UIControl {
     }
     
     func refreshControlThreshold() -> CGFloat {
-        return 100.0
+        return 80.0
     }
 }
